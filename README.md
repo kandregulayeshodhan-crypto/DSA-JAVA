@@ -53,33 +53,31 @@ Why Should You Solve These Problems?
 - Practice commonly tested coding interview patterns.
 - Build confidence for coding assessments and technical interviews.
 
-📚 Topics Covered
+Topics Covered
 
-#| Topic
-01| Array / String
-02| Two Pointers
-03| Sliding Window
-04| Matrix
-05| Hashmap
-06| Intervals
-07| Stack
-08| Linked List
-09| Binary Tree – General
-10| Binary Tree – BFS
-11| Binary Search Tree
-12| Graph – General
-13| Graph – BFS
-14| Trie
-15| Backtracking
-16| Divide and Conquer
-17| Kadane's Algorithm
-18| Binary Search
-19| Heap
-20| Bit Manipulation
-21| Math
-22| 1D Dynamic Programming
-23| Multidimensional Dynamic Programming
-
+1. Array / String
+2. Two Pointers
+3. Sliding Window
+4. Matrix
+5. Hashmap
+6. Intervals
+7. Stack
+8. Linked List
+9. Binary Tree – General
+10. Binary Tree – BFS
+11. Binary Search Tree
+12. Graph – General
+13. Graph – BFS
+14. Trie
+15. Backtracking
+16. Divide and Conquer
+17. Kadane's Algorithm
+18. Binary Search
+19. Heap
+20. Bit Manipulation
+21. Math
+22. 1D Dynamic Programming
+23. Multidimensional Dynamic Programming
 🔗 Start Practicing
 
 👉 "Solve LeetCode Top Interview 150" (https://leetcode.com/studyplan/top-interview-150/)
