@@ -1,7 +1,6 @@
 Implement Lower Bound
 
 - Platform: GeeksforGeeks
-- Problem ID: Not specified
 - Difficulty: Easy
 - Problem Link: https://www.geeksforgeeks.org/problems/implement-lower-bound/1
 
