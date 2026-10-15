@@ -1,8 +1,8 @@
 Find Out How Many Times the Array Is Rotated
 
 - Platform: GeeksforGeeks
-- Problem link: 
-- GFG – Find Kth Rotation
+- Problem Link
+[Find Kth Rotation - GeeksforGeeks](https://www.geeksforgeeks.org/problems/rotation4723/1)
 
 Problem Statement
 
