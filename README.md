@@ -39,40 +39,59 @@ I will regularly update this repository as I solve more problems.
 
 
 
+LeetCode Top Interview 150
 
-🚀 LeetCode Top Interview 150
+The LeetCode Top Interview 150 is a collection of 150 essential coding problems designed to help you strengthen your Data Structures and Algorithms (DSA) skills and prepare for technical interviews.
 
-Study Plan: "LeetCode Top Interview 150" (https://leetcode.com/studyplan/top-interview-150/)
+Whether you are a beginner building problem-solving skills or an aspiring software engineer preparing for placements, this study plan is a valuable resource to practice fundamental concepts, learn efficient approaches, and build confidence in coding interviews.
 
-Practicing the Top Interview 150 problems to strengthen Data Structures and Algorithms (DSA), improve problem-solving skills, and prepare for technical interviews.
+Why Should You Solve These Problems?
+
+- Strengthen your DSA fundamentals.
+- Improve logical thinking and problem-solving skills.
+- Learn to optimize time and space complexity.
+- Practice commonly tested coding interview patterns.
+- Build confidence for coding assessments and technical interviews.
 
 📚 Topics Covered
 
-No.| Topic| Problems
-1| "Array / String" (https://leetcode.com/studyplan/top-interview-150/)| 
-2| Two Pointers| 
-3| Sliding Window| 
-4| Matrix| 
-5| Hashmap| 
-6| Intervals| 
-7| Stack| 
-8| Linked List| 
-9| Binary Tree – General| 
-10| Binary Tree – BFS| 
-11| Binary Search Tree| 
-12| Graph – General| 
-13| Graph – BFS| 
-14| Trie| 
-15| Backtracking| 
-16| Divide and Conquer| 
-17| Kadane's Algorithm| 
-18| Binary Search| 
-19| Heap| 
-20| Bit Manipulation| 
-21| Math| 
-22| 1D Dynamic Programming| 
-23| Multidimensional Dynamic Programming| 
+#| Topic
+01| Array / String
+02| Two Pointers
+03| Sliding Window
+04| Matrix
+05| Hashmap
+06| Intervals
+07| Stack
+08| Linked List
+09| Binary Tree – General
+10| Binary Tree – BFS
+11| Binary Search Tree
+12| Graph – General
+13| Graph – BFS
+14| Trie
+15| Backtracking
+16| Divide and Conquer
+17| Kadane's Algorithm
+18| Binary Search
+19| Heap
+20| Bit Manipulation
+21| Math
+22| 1D Dynamic Programming
+23| Multidimensional Dynamic Programming
 
-Language: Java
+🔗 Start Practicing
 
-Goal: Solve all 150 problems and document my solutions.
+👉 "Solve LeetCode Top Interview 150" (https://leetcode.com/studyplan/top-interview-150/)
+
+💡 Recommended Approach
+
+1. Understand the problem before looking at the solution.
+2. Try solving it independently.
+3. Start with a brute-force approach and work toward an optimized solution.
+4. Analyze time and space complexity.
+5. Revisit difficult problems and practice consistently.
+
+---
+
+Keep practicing. Keep improving. Get interview-ready.
