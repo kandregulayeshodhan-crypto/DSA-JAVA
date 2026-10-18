@@ -1,52 +1,76 @@
 Implement Lower Bound
 
-- Platform: GeeksforGeeks
-- Difficulty: Easy
-- Problem Link: https://www.geeksforgeeks.org/problems/implement-lower-bound/1
+Platform: GeeksforGeeks
+Difficulty: Easy
+Topic: Binary Search, Arrays
+
+Problem Link: "Implement Lower Bound – GeeksforGeeks" (https://www.geeksforgeeks.org/problems/implement-lower-bound/1)
 
 Problem Statement
 
-Given a sorted array "arr[]" (following 0-based indexing) and a number "target", find the lower bound of the "target" in this given array. The lower bound of a number is defined as the smallest index in the sorted array where the element is greater than or equal to the given number.
+Given a sorted array "arr[]" (following 0-based indexing) and a number "target", find the lower bound of the target.
 
-Note: If all the elements in the given array are smaller than the "target", the lower bound will be the length of the array.
+The lower bound is the smallest index where the element is greater than or equal to the target.
+
+If no such element exists, return the length of the array.
 
 Examples
 
-Example 1:
+Example 1
 
-Input: "arr[] = [2, 3, 7, 10, 11, 11, 25], target = 9"
+Input: "arr = [2, 3, 7, 10, 11, 11, 25], target = 9"
 
 Output: "3"
 
-Explanation: 3 is the smallest index in "arr[]" where element ("arr[3] = 10") is greater than or equal to 9.
+Example 2
 
-Example 2:
-
-Input: "arr[] = [2, 3, 7, 10, 11, 11, 25], target = 11"
+Input: "arr = [2, 3, 7, 10, 11, 11, 25], target = 11"
 
 Output: "4"
 
-Explanation: 4 is the smallest index in "arr[]" where element ("arr[4] = 11") is greater than or equal to 11.
+Example 3
 
-Example 3:
-
-Input: "arr[] = [2, 3, 7, 10, 11, 11, 25], target = 100"
+Input: "arr = [2, 3, 7, 10, 11, 11, 25], target = 100"
 
 Output: "7"
 
-Explanation: As no element in the array is greater than or equal to 100, return the length of the array.
+---
 
-Constraints
+Approach 1: Brute Force (Linear Search)
 
-- "1 ≤ arr.size() ≤ 10^6"
-- "1 ≤ arr[i] ≤ 10^6"
-- "1 ≤ target ≤ 10^6"
+Intuition:
 
-Expected Complexity
+- Traverse the array from left to right.
+- Find the first element that is greater than or equal to the target.
+- Return its index immediately.
+- If no such element exists, return the length of the array.
 
-- Time Complexity: O(log n)
-- Auxiliary Space: O(1)
+Time Complexity: "O(n)"
 
-Topic Tags
+Auxiliary Space: "O(1)"
 
-Binary Search, Arrays
+Approach 2: Optimal (Binary Search)
+
+Intuition:
+
+- Since the array is sorted, eliminate half of the search space in each iteration.
+- Initialize "low = 0", "high = n - 1", and "ans = n".
+- Calculate the middle index.
+- If "arr[mid] >= target", store "mid" as a possible answer and search the left half for an earlier valid index.
+- If "arr[mid] < target", search the right half because the current element and all elements before it are too small.
+- Continue until the search space becomes empty.
+- Return the stored answer. If no valid element exists, the answer remains "n".
+
+Time Complexity: "O(log n)"
+
+Auxiliary Space: "O(1)"
+
+---
+
+Key Takeaways
+
+- Lower Bound: First index where "arr[i] >= target".
+- If the condition is satisfied, store the index and search left.
+- If the condition is not satisfied, search right.
+- Initialize the answer to "n" to handle cases where all elements are smaller than the target.
+- Binary Search pattern: Find the first index that satisfies a condition.
