@@ -47,7 +47,8 @@ Constraints
 - "nums" is sorted and possibly rotated.
 - "-10^4 <= target <= 10^4"
 
-- Approach 1: Brute Force
+
+Approach 1: Brute Force
   
 Traverse the array from left to right.
 
