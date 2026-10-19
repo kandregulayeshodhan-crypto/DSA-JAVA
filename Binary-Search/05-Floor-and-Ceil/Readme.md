@@ -45,6 +45,7 @@ Traverse the array from left to right.
 If arr[i] <= x, update ans = i.
 
 Otherwise, stop the loop because the array is sorted.
+
 Return ans.
 
 Time Complexity: O(n)
