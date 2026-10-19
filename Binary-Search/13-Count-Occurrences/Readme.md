@@ -25,7 +25,21 @@ Output: "0"
 
 Explanation: The target 4 is not present in the array.
 
-Approach: Binary Search
+Approach 1: Brute Force
+
+Logic
+
+1. Initialize "count = 0".
+2. Traverse the array from index "0" to "n - 1".
+3. If "arr[i] == target", increment "count" by "1".
+4. After traversing the entire array, return "count".
+
+Complexity Analysis
+
+- Time Complexity: "O(n)" — we traverse the entire array once.
+- Auxiliary Space: "O(1)" — only one extra variable, "count", is used.
+
+Approach 2: Binary Search
 
 1. Find the first occurrence of the target.
 
