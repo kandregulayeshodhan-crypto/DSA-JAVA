@@ -1,7 +1,9 @@
 Search Insert Position
 
 Platform: LeetCode
+
 Difficulty: Easy
+
 Topic: Arrays, Binary Search
 
 Problem Link: "Search Insert Position – LeetCode" (https://leetcode.com/problems/search-insert-position/)
