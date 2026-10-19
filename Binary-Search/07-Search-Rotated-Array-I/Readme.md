@@ -47,7 +47,19 @@ Constraints
 - "nums" is sorted and possibly rotated.
 - "-10^4 <= target <= 10^4"
 
-Approach: Binary Search
+- Approach 1: Brute Force
+- 
+Traverse the array from left to right.
+
+If nums[i] == target, return index i.
+
+If the target is not found after traversing the array, return -1.
+
+Time Complexity: O(n)
+
+Auxiliary Space: O(1)
+
+Approach 2: Binary Search
 
 1. Initialize "low = 0" and "high = nums.length - 1".
 2. Calculate "mid = low + (high - low) / 2".
