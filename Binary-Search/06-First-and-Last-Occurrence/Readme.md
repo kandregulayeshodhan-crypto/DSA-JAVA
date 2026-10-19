@@ -39,7 +39,26 @@ Output: "[-1, -1]"
 
 Explanation: The array is empty, so the target cannot be found.
 
-Approach: Binary Search
+Approach 1: Brute Force
+
+Initialize first = -1 and last = -1.
+
+Traverse the array from left to right.
+
+If nums[i] == target:
+
+If first == -1, store i in first.
+
+Update last = i every time the target is found.
+
+Return [first, last].
+
+Time Complexity: O(n)
+
+Auxiliary Space: O(1), excluding the output array.
+
+
+Approach 2: Binary Search
 
 1. Use binary search to find the first occurrence of the target.
 2. Use binary search to find the last occurrence of the target.
