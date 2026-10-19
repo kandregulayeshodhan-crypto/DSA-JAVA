@@ -66,14 +66,19 @@ Time Complexity: "O(log n)"
 Auxiliary Space: "O(1)"
 
 ---
-
 Key Difference: Lower Bound vs Upper Bound
 
-Lower Bound| Upper Bound
-First element ">= target"| First element "> target"
-If "arr[mid] >= target", search left| If "arr[mid] > target", search left
-Returns the first occurrence when the target exists| Skips all occurrences equal to the target
+Lower Bound
 
+- First element ">= target"
+- If "arr[mid] >= target", search left.
+- Returns the first occurrence when the target exists.
+
+Upper Bound
+
+- First element "> target"
+- If "arr[mid] > target", search left.
+- Skips all occurrences equal to the target.
 Key Takeaways
 
 - Upper Bound: Find the first index where "arr[i] > target".
