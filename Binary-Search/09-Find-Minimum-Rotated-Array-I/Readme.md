@@ -59,11 +59,19 @@ Auxiliary Space: O(1)
 
 Approach 2: Binary Search
 
-1. Initialize "low = 0" and "high = nums.length - 1".
-2. While "low < high", calculate "mid".
-3. If "nums[mid] > nums[high]", the minimum is in the right half; set "low = mid + 1".
-4. Otherwise, the minimum is at "mid" or in the left half; set "high = mid".
-5. Return "nums[low]".
+Initialize low = 0 and high = nums.length - 1.
+
+Initialize ans = Integer.MAX_VALUE.
+
+While low <= high, calculate mid = (low + high) / 2.
+
+If nums[low] < nums[high], update ans = Math.min(ans, nums[low]) and stop the loop.
+
+If nums[low] <= nums[mid], the left half is sorted. Update ans = Math.min(ans, nums[low]) and search the right half by setting low = mid + 1.
+
+Otherwise, update ans = Math.min(ans, nums[mid]) and search the left half by setting high = mid - 1.
+
+Return ans.
 
 Complexity Analysis
 
