@@ -79,6 +79,7 @@ Upper Bound
 - First element "> target"
 - If "arr[mid] > target", search left.
 - Skips all occurrences equal to the target.
+- 
 Key Takeaways
 
 - Upper Bound: Find the first index where "arr[i] > target".
