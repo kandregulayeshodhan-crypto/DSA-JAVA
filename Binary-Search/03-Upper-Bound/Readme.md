@@ -1,7 +1,9 @@
 Implement Upper Bound
 
 Platform: GeeksforGeeks
+
 Difficulty: Easy
+
 Topic: Binary Search, Arrays
 
 Problem Link: "Implement Upper Bound – GeeksforGeeks" (https://www.geeksforgeeks.org/problems/implement-upper-bound/1)
