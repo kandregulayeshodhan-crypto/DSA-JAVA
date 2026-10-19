@@ -48,7 +48,7 @@ Constraints
 - "-10^4 <= target <= 10^4"
 
 - Approach 1: Brute Force
-- 
+  
 Traverse the array from left to right.
 
 If nums[i] == target, return index i.
