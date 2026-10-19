@@ -1,7 +1,9 @@
 Implement Lower Bound
 
 Platform: GeeksforGeeks
+
 Difficulty: Easy
+
 Topic: Binary Search, Arrays
 
 Problem Link: "Implement Lower Bound – GeeksforGeeks" (https://www.geeksforgeeks.org/problems/implement-lower-bound/1)
