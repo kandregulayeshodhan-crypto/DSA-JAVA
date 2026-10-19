@@ -1,14 +1,13 @@
 import java.util.Arrays;
 class Solution {
-    public int maxChildren(int[] greed, int[] cookie) {
-        // code here
-        Arrays.sort(greed);
-        Arrays.sort(cookie);
-        int count=0;
+    public int findContentChildren(int[] g, int[] s) {
+        Arrays.sort(g);
+        Arrays.sort(s);
         int i=0;
         int j=0;
-        while(i<greed.length && j<cookie.length) {
-            if(cookie[j]>=greed[i]) {
+        int count=0;
+        while(i<g.length && j<s.length) {
+            if(s[j]>=g[i]) {
                 count++;
                 i++;
                 j++;
