@@ -42,7 +42,19 @@ Constraints
 - "nums" is rotated at an unknown pivot.
 - "-10^4 <= target <= 10^4"
 
-Approach: Modified Binary Search
+Approach 1: Brute Force
+
+Traverse the array from left to right.
+
+If nums[i] == target, return true.
+
+If the target is not found after traversing the entire array, return false.
+
+Time Complexity: O(n)
+
+Auxiliary Space: O(1)
+
+Approach 2: Modified Binary Search
 
 1. Initialize "low = 0" and "high = nums.length - 1".
 2. Calculate "mid = low + (high - low) / 2".
