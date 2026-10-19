@@ -36,7 +36,16 @@ Output: "-1"
 
 Explanation: No element is less than or equal to 0.
 
-Approach: Binary Search
+Approach 1: Brute Force
+Initialize ans = -1.
+Traverse the array from left to right.
+If arr[i] <= x, update ans = i.
+Otherwise, stop the loop because the array is sorted.
+Return ans.
+Time Complexity: O(n)
+Auxiliary Space: O(1)
+
+Approach 2: Binary Search
 
 1. Initialize "low = 0" and "high = arr.length - 1".
 2. Set "ans = -1".
@@ -92,7 +101,14 @@ Output: "-1"
 
 Explanation: No element is greater than or equal to 20.
 
-Approach: Binary Search
+Approach 1: Brute Force
+Traverse the array from left to right.
+If arr[i] >= x, return i immediately.
+If no such element exists, return -1.
+Time Complexity: O(n)
+Auxiliary Space: O(1)
+
+Approach 2: Binary Search
 
 1. Initialize "low = 0" and "high = arr.length - 1".
 2. Set "ans = -1".
