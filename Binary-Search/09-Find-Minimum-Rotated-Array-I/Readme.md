@@ -43,7 +43,21 @@ Constraints
 - All elements are unique.
 - "nums" is sorted and rotated between 1 and "n" times.
 
-Approach: Binary Search
+Approach 1: Brute Force
+
+Initialize min = nums[0].
+
+Traverse the array from index 1 to nums.length - 1.
+
+If nums[i] < min, update min = nums[i].
+
+Return min.
+
+Time Complexity: O(n)
+
+Auxiliary Space: O(1)
+
+Approach 2: Binary Search
 
 1. Initialize "low = 0" and "high = nums.length - 1".
 2. While "low < high", calculate "mid".
