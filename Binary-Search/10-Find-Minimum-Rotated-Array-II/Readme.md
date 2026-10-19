@@ -35,14 +35,53 @@ Constraints
 - "nums" is sorted and may contain duplicates.
 - "nums" is rotated between 1 and "n" times.
 
-Approach: Modified Binary Search
+Approach 1: Brute Force
 
-1. Initialize "low = 0" and "high = nums.length - 1".
-2. While "low < high", calculate "mid".
-3. If "nums[mid] > nums[high]", set "low = mid + 1".
-4. If "nums[mid] < nums[high]", set "high = mid".
-5. If "nums[mid] == nums[high]", decrease "high" by 1.
-6. Return "nums[low]".
+Initialize min = nums[0].
+
+Traverse the array from index 1 to nums.length - 1.
+
+If nums[i] < min, update min = nums[i].
+
+Return min.
+
+Time Complexity: O(n)
+
+Auxiliary Space: O(1)
+
+Approach 2:  Modified Binary Search
+
+Initialize low = 0, high = nums.length - 1, and ans = Integer.MAX_VALUE.
+
+While low <= high, check whether the current search range is already sorted.
+
+If nums[low] < nums[high], update ans = Math.min(ans, nums[low]) and stop the loop.
+
+Calculate mid = (low + high) / 2.
+
+If nums[low] == nums[mid] && nums[mid] == nums[high]:
+
+Update ans = Math.min(ans, nums[low]).
+
+Shrink the search range by setting low++ and high--.
+
+Otherwise, if nums[low] <= nums[mid]:
+
+The left half is sorted.
+
+Update ans = Math.min(ans, nums[low]).
+
+Search the right half by setting low = mid + 1.
+
+Otherwise:
+
+Update ans = Math.min(ans, nums[mid]).
+
+Search the left half by setting high = mid - 1.
+
+Return ans.
+
+
 
 Complexity Analysis
 
